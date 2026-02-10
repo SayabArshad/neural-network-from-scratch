@@ -15,7 +15,7 @@ python basic_neural_network.py
 📋 Overview
 This project implements a basic feedforward neural network with one hidden layer from the ground up. The network is trained on the classic XOR (exclusive OR) problem, which is non-linearly separable and serves as an excellent benchmark for neural network implementations. By avoiding high-level deep learning frameworks, this project provides clear insight into the underlying mathematics and algorithms of neural networks.
 
-<div align="center"> <img src="assets/code.jpg" alt="Code Implementation" width="800"/> <p><em>Complete neural network implementation in Python</em></p> </div>
+<div align="center"> <img src="assets/code.JPG" alt="Code Implementation" width="800"/> <p><em>Complete neural network implementation in Python</em></p> </div>
 ✨ Features
 Feature	Description	Status
 🧠 From Scratch	Built without any ML frameworks	✅
@@ -85,7 +85,7 @@ nn.train(X, y, epochs=10000)
 output = nn.forward([1, 0])
 📈 Results & Visualizations
 Program Output
-<div align="center"> <img src="assets/output.jpg" alt="Program Output" width="800"/> <p><em>Training progress and final predictions</em></p> </div>
+<div align="center"> <img src="assets/output.JPG" alt="Program Output" width="800"/> <p><em>Training progress and final predictions</em></p> </div>
 Performance Results
 Input	Expected	Predicted
 [0, 0]	0	~0.00
