@@ -197,7 +197,7 @@ https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoC
 https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white
 https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white
 
-Project Link: https://github.com/yourusername/neural-network-from-scratch
+Project Link: https://github.com/SayabArshad/neural-network-from-scratch
 
 </div>
 <div align="center">
