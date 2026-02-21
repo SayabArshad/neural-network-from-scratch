@@ -1,214 +1,111 @@
-# Neural Network from Scratch
-A minimal neural network implementation from scratch in Python using only NumPy. This project demonstrates the fundamental mechanics of neural networks by solving the XOR problem through backpropagation and gradient descent.
+# 🧠 Neural Network from Scratch | XOR Problem Solver 🤖  
+![Python](https://img.shields.io/badge/Python-3.6+-blue?logo=python) ![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-blue?logo=numpy) ![License](https://img.shields.io/badge/License-MIT-yellow) ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-# 🚀 Quick Start
-bash
-# Clone the repository
-git clone https://github.com/yourusername/neural-network-from-scratch.git
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="Neural Network Logo" width="140"/>
+</p>
+
+🚀 A minimal **neural network implementation from scratch** in Python using only NumPy. This project demonstrates the fundamental mechanics of neural networks by solving the **XOR problem** through backpropagation and gradient descent. Perfect for understanding the inner workings of deep learning without high‑level frameworks.
+
+---
+
+## ✨ Key Features  
+🧠 **Pure Python & NumPy** – No deep learning frameworks, just maths  
+⚡ **Forward & Backward Pass** – Complete propagation implementation  
+📉 **Loss Monitoring** – Tracks mean squared error during training  
+🎯 **XOR Solution** – Successfully learns the non‑linear XOR function  
+🔧 **Customizable Architecture** – Adjust hidden neurons, learning rate, epochs  
+📚 **Educational Code** – Clear, well‑commented code for learning  
+
+---
+
+## 🧠 Tech Stack  
+- **Language:** Python 🐍  
+- **Numerical Library:** NumPy 🔢  
+- **Activation:** Sigmoid  
+- **Loss Function:** Mean Squared Error  
+- **Optimizer:** Gradient Descent  
+
+---
+
+## 📦 Installation  
+
+```bash
+git clone https://github.com/SayabArshad/neural-network-from-scratch.git
 cd neural-network-from-scratch
-
-# Install dependencies
 pip install numpy
+```
+---
 
-# Run the neural network
+## ▶️ Usage
+
+Run the main script:
+
+```bash
 python basic_neural_network.py
-📋 Overview
-This project implements a basic feedforward neural network with one hidden layer from the ground up. The network is trained on the classic XOR (exclusive OR) problem, which is non-linearly separable and serves as an excellent benchmark for neural network implementations. By avoiding high-level deep learning frameworks, this project provides clear insight into the underlying mathematics and algorithms of neural networks.
+```
+You’ll see the training loss over epochs and the final predictions for all XOR input combinations.
 
-<div align="center"> <img src="assets/code.JPG" alt="Code Implementation" width="800"/> <p><em>Complete neural network implementation in Python</em></p> </div>
-✨ Features
-Feature	Description	Status
-🧠 From Scratch	Built without any ML frameworks	✅
-⚡ Forward Pass	Complete forward propagation	✅
-🔄 Backpropagation	Gradient descent implementation	✅
-📊 Loss Monitoring	Mean squared error tracking	✅
-🧪 XOR Solution	Solves XOR logic gate problem	✅
-🎯 Educational	Clear, commented code for learning	✅
-🛠️ Technologies Used
-<div align="center">
-Technology	Purpose	Logo
-Python	Core programming language	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" alt="Python">
-NumPy	Numerical computing	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="40" height="40" alt="NumPy">
-</div>
-📁 Project Structure
-text
+---
+
+## 📁 Project Structure
+
+```
 neural-network-from-scratch/
-│
-├── assets/
-│   ├── code.jpg
-│   └── output.jpg
-│
-├── basic_neural_network.py
-├── requirements.txt
-├── LICENSE
-└── README.md
-🔧 Installation
-Prerequisites
-Python 3.8+
+│-- basic_neural_network.py          # Main implementation
+│-- requirements.txt                  # Dependencies (numpy)
+│-- README.md                         # Documentation
+│-- assets/                           # Images for README
+│    ├── code.JPG
+│    └── output.JPG
+```
 
-pip package manager
+---
 
-Step 1: Clone Repository
-bash
-git clone https://github.com/yourusername/neural-network-from-scratch.git
-cd neural-network-from-scratch
-Step 2: Create Virtual Environment
-bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
+## 🖼️ Interface Previews
 
-# Linux/Mac
-python3 -m venv venv
-source venv/bin/activate
-Step 3: Install Dependencies
-bash
-pip install numpy
-💻 Usage
-Basic Usage
-bash
-python basic_neural_network.py
-Code Example
-python
-# Network Initialization
-nn = NeuralNetwork(
-    input_size=2,
-    hidden_size=2,
-    output_size=1,
-    learning_rate=0.5
-)
+|       📝 Code Snippet       |        📊 Console Output        |
+| :-------------------------: | :-----------------------------: |
+| ![Code Snippet](assets/code.JPG) | ![Output](assets/output.JPG) |
 
-# Training
-nn.train(X, y, epochs=10000)
+---
 
-# Testing
-output = nn.forward([1, 0])
-📈 Results & Visualizations
-Program Output
-<div align="center"> <img src="assets/output.JPG" alt="Program Output" width="800"/> <p><em>Training progress and final predictions</em></p> </div>
-Performance Results
-Input	Expected	Predicted
-[0, 0]	0	~0.00
-[0, 1]	1	~0.99
-[1, 0]	1	~0.99
-[1, 1]	0	~0.01
-Training Progress
-text
-Epoch 1000, Loss: 0.2543
-Epoch 2000, Loss: 0.1324
-Epoch 3000, Loss: 0.0812
-Epoch 4000, Loss: 0.0421
-Epoch 5000, Loss: 0.0254
-Epoch 6000, Loss: 0.0178
-Epoch 7000, Loss: 0.0135
-Epoch 8000, Loss: 0.0108
-Epoch 9000, Loss: 0.0089
-Epoch 10000, Loss: 0.0057
-🤖 How It Works
-Architecture
-text
-Input Layer (2)
-        ↓
-Hidden Layer (2) + Sigmoid
-        ↓
-Output Layer (1) + Sigmoid
-Algorithm
-python
-# 1. Forward Propagation
-hidden = sigmoid(X · W₁ + b₁)
-output = sigmoid(hidden · W₂ + b₂)
+## 💡 About the Project
 
-# 2. Error Calculation
-error = mean_squared_error(y, output)
+This project builds a feedforward neural network with one hidden layer from absolute scratch. It uses the sigmoid activation function, mean squared error loss, and gradient descent with backpropagation. The XOR problem is a classic benchmark because it is not linearly separable, making it an ideal test for a neural network’s capacity to learn non‑linear patterns. By implementing everything manually, you gain deep insight into how networks really work under the hood.
 
-# 3. Backward Propagation
-# Compute gradients
-# Update weights
+---
 
-# 4. Repeat
-Mathematical Foundation
-Sigmoid: σ(x) = 1/(1+e⁻ˣ)
+## 🧑‍💻 Author
 
-Loss: MSE = 1/n Σ(yᵢ - ŷᵢ)²
 
-Gradient Descent: w = w - η·∇loss
+**Developed by:** [Sayab Arshad Soduzai](https://github.com/SayabArshad) 👨‍💻
 
-🎯 Customization
-Network Parameters
-python
-# Adjust these values:
-nn = NeuralNetwork(
-    input_size=2,      # Number of inputs
-    hidden_size=4,     # Hidden neurons (try 2, 4, 8)
-    output_size=1,     # Number of outputs
-    learning_rate=0.3  # Try 0.1, 0.3, 0.5, 0.8
-)
-Experiment Ideas
-Change hidden layer size (2, 4, 8 neurons)
+📅 **Version:** 1.0.0
 
-Adjust learning rate (0.1, 0.3, 0.5)
+📜 **License:** MIT License
 
-Try different activation functions
+---
 
-Add more hidden layers
+## ⭐ Contributions
 
-Modify training epochs
+Contributions are welcome! Fork the repository, open issues, or submit pull requests to add features like:
 
-🤝 Contributing
-Contribution Workflow
-Fork the Repository
+More hidden layers
 
-bash
-git clone https://github.com/yourusername/neural-network-from-scratch.git
-Create Feature Branch
+Different activation functions (ReLU, tanh)
 
-bash
-git checkout -b feature/Enhancement
-Commit Changes
-
-bash
-git commit -m 'Add enhancement'
-Push to Branch
-
-bash
-git push origin feature/Enhancement
-Open Pull Request
-
-Improvement Areas
-Multiple hidden layers
-
-Different activation functions
-
-Batch training support
-
-Training visualizations
+Batch training
 
 Momentum optimization
+If you find this project helpful, please ⭐ star the repository to show your support.
 
-📄 License
-This project is licensed under the MIT License - see LICENSE for details.
+---
 
-📞 Contact
-<div align="center">
-Sayab Arshad Soduzai
-AI & Machine Learning Developer
+## 📧 Contact
 
-https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white
-https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white
-https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white
+For queries, collaborations, or feedback, reach out at **[sayabarshad789@gmail.com](mailto:sayabarshad789@gmail.com)**
 
-Project Link: https://github.com/SayabArshad/neural-network-from-scratch
+---
 
-</div>
-<div align="center">
-If you find this project helpful, please consider giving it a ⭐ on GitHub!
-
-Happy Learning! 🚀
-
-</div>
-
-Gradient descent optimization
-
-Activation functions (sigmoid)
-
-Loss computation (mean squared error)
+🧠 Understanding neural networks one line of code at a time.
