@@ -52,10 +52,10 @@ You’ll see the training loss over epochs and the final predictions for all XOR
 
 ```
 neural-network-from-scratch/
-│-- basic_neural_network.py          # Main implementation
-│-- requirements.txt                  # Dependencies (numpy)
-│-- README.md                         # Documentation
-│-- assets/                           # Images for README
+│-- basic_neural_network.py         
+│-- requirements.txt                  
+│-- README.md                         
+│-- assets/                           
 │    ├── code.JPG
 │    └── output.JPG
 ```
